@@ -34,7 +34,8 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   align-items: center;
 }
 .page-logo-title {
@@ -426,6 +427,7 @@ img {
 }
 .footer {
   display: flex;
+  flex-direction: row;
 }
 .content-footer {
   font-weight: 400;
@@ -478,8 +480,7 @@ img {
   letter-spacing: 2%;
   color: white;
   max-width: 96px;
-  text-align: left;
-  margin-bottom: 10px;
+  text-align: center;
 }
 .form {
   display: flex;
@@ -552,6 +553,7 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   z-index: 2;
+  visibility: hidden;
 }
 .modal-part {
   width: 408px;
@@ -744,4 +746,89 @@ img {
 .send-button:hover {
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* FOR MOBILE */
+@media only screen and (max-width: 320px) {
+  .container-header {
+    display: block;
+    height: auto;
+  }
+  .head-of-first-section {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    align-items: center;
+    max-width: 216px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+  }
+  .first-section {
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+      url("../images/people-office\ 1\ \(1\).jpg") center / cover no-repeat;
+    width: 320px;
+    height: 432px;
+  }
+  .button-type {
+    margin-top: 65px;
+  }
+  .second-section {
+    width: 288px;
+    height: auto;
+    top: 584px;
+    left: 16px;
+    gap: 72px;
+  }
+  .second-section-icons {
+    visibility: hidden;
+  }
+  .section-part-explanation {
+    display: block;
+    height: auto;
+  }
+
+  .content-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.5;
+    text-align: center;
+  }
+  .section-part-explanation p {
+    font-weight: 500;
+    width: 288px;
+    text-align: left;
+  }
+  .team-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-class {
+    width: 320px;
+    height: 664px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 72px;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer-social {
+    align-items: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-button {
+    margin-top: 16px;
+  }
+  .form-button {
+    align-items: center;
+  }
 }
