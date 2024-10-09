@@ -749,10 +749,6 @@ img {
 }
 /* FOR MOBILE */
 @media only screen and (max-width: 320px) {
-  .container-header {
-    display: block;
-    height: auto;
-  }
   .head-of-first-section {
     font-size: 36px;
     line-height: 1.2;
@@ -834,45 +830,38 @@ img {
   }
 }
 /* FOR TABLET */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  .container-header {
-    height: auto;
-    display: block;
-  }
-  .address-list li {
-    float: left;
-  }
+@media screen and (min-width: 768px) and (max-width: 1158px) {
   .head-of-first-section {
-    font-size: 56px;
-    line-height: 1.0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    padding-right: 150px;
-    
-    display: flex;
-    padding-bottom: 100px;
+    line-height: 1;
+    width: 100%;
   }
   .button-type {
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-right: 70px;
+    display: flex;
+    margin: 0 auto;
   }
   .first-section {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
-      url("../images/people-office\ 1\ \(1\).jpg") center / cover no-repeat;
-    width: 768px;
-    height: 436px;
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .second-section-icons {
-    visibility: hidden;
+    display: none;
   }
-
+.second-section {
+  height: auto;
+}
+  .section-part-explanation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
   .content-header {
     font-weight: 700;
     font-size: 36px;
@@ -881,22 +870,50 @@ img {
   }
   .section-part-explanation p {
     font-weight: 500;
-    width: 356px;
     text-align: left;
   }
   .content-of-section {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%; 
-    top: 604px;
-  left: 16px;
-  }
-  .strategy {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    flex-direction: column;
-   justify-content: space-between;
-  
+    gap: 120px;
+    min-height: 316px;
+    width: 736px;
+  }
+  .third-section {
+    height: 1224px;
+  }
+  .heading-team {
+    text-align: center;
+  }
+  .team-part {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-of-team-part {
+    width: 264px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .heading-portfolio {
+    text-align: center;
+  }
+  .portfolio-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list-portfolio {
+    width: 356px;
+  }
+  .footer {
+    max-width: 768px;
+    width: 100%;
+    height: 456px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 100px;
   }
 }
