@@ -794,9 +794,10 @@ img {
     line-height: 2.5;
     text-align: center;
   }
-  .section-part-explanation p {
+  .strategy p {
     font-weight: 500;
     width: 288px;
+    height: 72px;
     text-align: left;
   }
   .team-part {
@@ -833,7 +834,10 @@ img {
   }
 }
 /* FOR TABLET */
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .container-header {
     height: auto;
     display: block;
@@ -843,13 +847,20 @@ img {
   }
   .head-of-first-section {
     font-size: 56px;
-    line-height: 1.3;
+    line-height: 1.0;
     text-align: center;
     align-items: center;
-    max-width: 496px;
-    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 150px;
+    
     display: flex;
     padding-bottom: 100px;
+  }
+  .button-type {
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
   }
   .first-section {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -866,16 +877,26 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 2.5;
-    text-align: center;
+    text-align: left;
   }
   .section-part-explanation p {
     font-weight: 500;
     width: 356px;
     text-align: left;
   }
+  .content-of-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    top: 604px;
+  left: 16px;
+  }
   .strategy {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+   justify-content: space-between;
+  
   }
 }
